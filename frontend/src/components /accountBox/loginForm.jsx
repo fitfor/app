@@ -9,12 +9,14 @@ import {
 } from "./common";
 import { Marginer } from "../marginer";
 import { AccountContext } from "./accountContext";
+import MaxWidthContainer from "../MaxWidthContainer";
+
 
 export function LoginForm(props) {
   const { switchToSignup } = useContext(AccountContext);
 
   return (
-    <BoxContainer>
+    <>
       <FormContainer>
         <Input type="email" placeholder="Email" />
         <Input type="password" placeholder="Password" />
@@ -25,11 +27,11 @@ export function LoginForm(props) {
       <SubmitButton type="submit">Signin</SubmitButton>
       <Marginer direction="vertical" margin="1em" />
       <MutedLink href="#">
-        Don't have an accoun?{" "}
+        Don't have an account?{" "}
         <BoldLink href="#" onClick={switchToSignup}>
           Signup
         </BoldLink>
       </MutedLink>
-    </BoxContainer>
+    </>
   );
 }
