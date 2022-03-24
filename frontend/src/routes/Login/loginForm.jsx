@@ -7,9 +7,8 @@ import {
   MutedLink,
   SubmitButton,
 } from "./common";
-import { Marginer } from "../marginer";
+import { Marginer } from "../../components/Marginer";
 import { AccountContext } from "./accountContext";
-import MaxWidthContainer from "../MaxWidthContainer";
 
 
 export function LoginForm(props) {
@@ -22,14 +21,14 @@ export function LoginForm(props) {
         <Input type="password" placeholder="Password" />
       </FormContainer>
       <Marginer direction="vertical" margin={10} />
-      <MutedLink href="#">Forget your password?</MutedLink>
+      <MutedLink href="#">Forgot your password?</MutedLink>
       <Marginer direction="vertical" margin="1.6em" />
-      <SubmitButton type="submit">Signin</SubmitButton>
+      <SubmitButton type="submit">Sign in</SubmitButton>
       <Marginer direction="vertical" margin="1em" />
       <MutedLink href="#">
         Don't have an account?{" "}
         <BoldLink href="#" onClick={switchToSignup}>
-          Signup
+          Sign up
         </BoldLink>
       </MutedLink>
     </>

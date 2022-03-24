@@ -4,7 +4,6 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 import styled from "styled-components";
 import Login from "./routes/Login";
-import { AccountBox } from "./components /accountBox";
 import { mediaQuery, MediaQueryWidth } from "./utils";
 
 
@@ -36,12 +35,11 @@ function App() {
   return (
     <AppContainer>
       <BoxContainer>
-        <AccountBox />
-        {/* <Routes>
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="login" element={<Login />} />
-      </Routes> */}
+      </Routes>
       </BoxContainer>
     </AppContainer>
 

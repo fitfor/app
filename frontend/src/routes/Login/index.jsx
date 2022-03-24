@@ -6,7 +6,7 @@ import { LoginForm } from "./loginForm";
 import { motion } from "framer-motion";
 import { AccountContext } from "./accountContext";
 import { SignupForm } from "./signupForm";
-import MaxWidthContainer from "../MaxWidthContainer";
+import MaxWidthContainer from "../../components/MaxWidthContainer";
 
 
 const TopContainer = styled.div`
@@ -68,6 +68,7 @@ const InnerContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0 1.8em;
+  z-index:10;
 `;
 
 const backdropVariants = {
@@ -93,7 +94,7 @@ const expandingTransition = {
 
 const FormMaxWidthContainer = MaxWidthContainer(300)
 
-export function AccountBox(props) {
+export default function AccountBox(props) {
   const [isExpanded, setExpanded] = useState(false);
   const [active, setActive] = useState("signin");
 
