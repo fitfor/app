@@ -6,10 +6,10 @@
   "dependencies": {
     "js-tokens": "^4.0.0",
     "loose-envify": "^1.4.0",
-    "react": "^17.0.2",
-    "object-assign": "^4.1.1"
+    "object-assign": "^4.1.1",
+    "prettier": "2.6.0",
+    "react": "^17.0.2"
   },
-  "devDependencies": {},
   "scripts": {
     "build": "bash build.sh",
     "install-prod": "bash install-prod.sh",

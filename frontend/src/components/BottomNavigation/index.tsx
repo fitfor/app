@@ -34,7 +34,7 @@ function NavItem(props: any) {
 
 function BottomNavigation() {
     return <NavigationContainer>
-        <NavItem icon={BookFill} text='My Library' href='/library'></NavItem>
+        <NavItem icon={BookFill} text='My Library' href='/my-library'></NavItem>
         <NavItem icon={HouseFill} text='Home' href='/'></NavItem>
         <NavItem icon={PersonFill} text='My Account' href='/my-account'></NavItem>
     </NavigationContainer>

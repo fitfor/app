@@ -2,6 +2,8 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./routes/Home";
 import About from "./routes/About";
+import MyLibrary from './routes/MyLibrary'
+import MyAccount from './routes/MyAccount'
 import styled from "styled-components";
 import Login from "./routes/Login";
 import { mediaQuery, MediaQueryWidth } from "./utils";
@@ -39,6 +41,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/my-library" element={<MyLibrary />} />
+        <Route path="/my-account" element={<MyAccount />} />
       </Routes>
       </BoxContainer>
     </AppContainer>
