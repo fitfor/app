@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BookFill, HouseFill, PersonFill } from "react-bootstrap-icons";
+import { Grid1x2Fill, HouseFill, PersonFill } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 import { mediaQuery, MediaQueryWidth } from "../../utils";
 
@@ -39,7 +39,7 @@ function NavItem(props: any) {
 
 function BottomNavigation() {
     return <NavigationContainer>
-        <NavItem icon={BookFill} text='My Library' href='/my-library'></NavItem>
+        <NavItem icon={Grid1x2Fill} text='My Library' href='/my-library'></NavItem>
         <NavItem icon={HouseFill} text='Home' href='/'></NavItem>
         <NavItem icon={PersonFill} text='My Account' href='/my-account'></NavItem>
     </NavigationContainer>

@@ -31,7 +31,7 @@ function Home() {
         }}
       >
         <AvatarImage src="https://source.unsplash.com/random/300x300?man,person" />
-        <p className="mt-5">You can do this, I believe in you.</p>
+        <p className="mt-5">Here are our suggestions. You can do this, we believe in you.</p>
       </Row>
       <Row xs={2} justifyContent="center">
         {recCards}

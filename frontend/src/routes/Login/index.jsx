@@ -135,14 +135,14 @@ export default function AccountBox(props) {
             <HeaderContainer>
               <HeaderText>Welcome</HeaderText>
               <HeaderText>Back</HeaderText>
-              <SmallText>Please sign in to continue!</SmallText>
+              <SmallText>Sign in to continue!</SmallText>
             </HeaderContainer>
           )}
           {active === "signup" && (
             <HeaderContainer>
               <HeaderText>Create</HeaderText>
               <HeaderText>Account</HeaderText>
-              <SmallText>Please sign up to continue!</SmallText>
+              <SmallText>Sign up to continue!</SmallText>
             </HeaderContainer>
           )}
         </TopContainer>
