@@ -16,16 +16,16 @@ export const FormContainer = styled.form`
 `;
 
 export const MutedLink = styled.a`
-  font-size: 11px;
-  color: rgba(200, 200, 200, 0.8);
+  font-size: 12px;
+  color: #9a0941AA;
   font-weight: 500;
   text-decoration: none;
 `;
 
 export const BoldLink = styled.a`
-  font-size: 11px;
-  color: rgb(241, 196, 15);
-  font-weight: 500;
+  font-size: 12px;
+  color: #9a0941;
+  font-weight: 600;
   text-decoration: none;
   margin: 0 4px;
 `;
@@ -34,16 +34,16 @@ export const Input = styled.input`
   width: 100%;
   height: 42px;
   outline: none;
-  border: 1px solid rgba(200, 200, 200, 0.3);
+  border: 1px solid rgba(150,150,150, 0.3);
   padding: 0px 10px;
   border-bottom: 1.4px solid transparent;
   transition: all 200ms ease-in-out;
   font-size: 12px;
   &::placeholder {
-    color: rgba(200, 200, 200, 1);
+    color: rgba(150,150,150, 1);
   }
   &:not(:last-of-type) {
-    border-bottom: 1.5px solid rgba(200, 200, 200, 0.4);
+    border-bottom: 1.5px solid rgba(150,150,150, 0.4);
   }
   &:focus {
     outline: none;
@@ -61,11 +61,11 @@ export const SubmitButton = styled.button`
   border-radius: 100px 100px 100px 100px;
   cursor: pointer;
   transition: all, 240ms ease-in-out;
-  background: rgb(241, 196, 15);
+  background: #9a0941;
   background: linear-gradient(
-    58deg,
-    rgba(241, 196, 15, 1) 20%,
-    rgba(243, 172, 18, 1) 100%
+    135deg,
+    #9a0941BF 20%,
+    #9a0941FF 100%
   );
   &:hover {
     filter: brightness(1.03);

@@ -3,8 +3,8 @@ import GridTile from '../GridTile'
 
 function ImageTile(props: any) {
     return (
-        <GridTile {...props}>
-            <Image style={{ width: '100%' }} src={props.src} />
+        <GridTile {...props} style={{margin:0,padding:0}}>
+            <Image style={{ width: '100%', height:'100%', borderRadius: '10px'}} src={props.src} />
         </GridTile>)
 }
 

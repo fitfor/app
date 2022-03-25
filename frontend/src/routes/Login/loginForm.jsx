@@ -9,7 +9,7 @@ import {
 } from "./common";
 import { Marginer } from "../../components/Marginer";
 import { AccountContext } from "./accountContext";
-
+import { Link } from "react-router-dom";
 
 export function LoginForm(props) {
   const { switchToSignup } = useContext(AccountContext);
@@ -23,7 +23,13 @@ export function LoginForm(props) {
       <Marginer direction="vertical" margin={10} />
       <MutedLink href="#">Forgot your password?</MutedLink>
       <Marginer direction="vertical" margin="1.6em" />
-      <SubmitButton type="submit">Sign in</SubmitButton>
+
+      <SubmitButton type="submit">
+        <Link to="/" style={{ textDecoration: "none",color:'white' }}>
+          Sign in
+        </Link>
+      </SubmitButton>
+
       <Marginer direction="vertical" margin="1em" />
       <MutedLink href="#">
         Don't have an account?{" "}
