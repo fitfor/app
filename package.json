@@ -1,0 +1,33 @@
+{
+  "name": "start-hack-22",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "js-tokens": "^4.0.0",
+    "loose-envify": "^1.4.0",
+    "react": "^17.0.2",
+    "object-assign": "^4.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "bash build.sh",
+    "install-prod": "bash install-prod.sh",
+    "format": "prettier --write .",
+    "format-staged": "pretty-quick --staged",
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix .",
+    "heroku-prebuild": "npm run install-prod",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fitfor/app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fitfor/app/issues"
+  },
+  "homepage": "https://github.com/fitfor/app#readme"
+}
