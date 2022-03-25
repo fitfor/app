@@ -4,7 +4,7 @@ import PageTitle from "../../components/PageTitle";
 
 function MyAccount() {
   return (
-    <Container>
+    <Container style ={{marginBottom: 100}}>
       <PageTitle>My Account</PageTitle>
     </Container>
   );

@@ -15,7 +15,7 @@ export function SignupForm(props) {
 
   return (
     <>
-      <FormContainer>
+      <FormContainer  style={{zIndex:10}}>
         <Input type="text" placeholder="Full Name" />
         <Input type="email" placeholder="Email" />
         <Input type="password" placeholder="Password" />

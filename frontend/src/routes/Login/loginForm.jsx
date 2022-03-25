@@ -16,7 +16,7 @@ export function LoginForm(props) {
 
   return (
     <>
-      <FormContainer>
+      <FormContainer style={{zIndex:10}}>
         <Input type="email" placeholder="Email" />
         <Input type="password" placeholder="Password" />
       </FormContainer>

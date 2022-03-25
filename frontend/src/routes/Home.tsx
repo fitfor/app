@@ -20,7 +20,7 @@ function Home() {
     <RecommendationTile key={k} categoryId={k}></RecommendationTile>
   ));
   return (
-    <Container>
+    <Container style ={{marginBottom: 100}}>
       <PageTitle style={{ textAlign: "center" }}>Welcome back, John!</PageTitle>
       <Row
         className=""
@@ -30,7 +30,7 @@ function Home() {
           textAlign: "center",
         }}
       >
-        <AvatarImage src="https://source.unsplash.com/random/300x300" />
+        <AvatarImage src="https://source.unsplash.com/random/300x300?man,person" />
         <p className="mt-5">You can do this, I believe in you.</p>
       </Row>
       <Row xs={2} justifyContent="center">

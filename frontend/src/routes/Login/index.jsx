@@ -123,6 +123,7 @@ export default function AccountBox(props) {
 
   return (
     <AccountContext.Provider value={contextValue}>
+      <div style={{minHeight:'100vh'}}>
         <TopContainer>
           <BackDrop
             initial={false}
@@ -151,7 +152,7 @@ export default function AccountBox(props) {
           {active === "signup" && <SignupForm />}
           </FormMaxWidthContainer>
           </InnerContainer>
-
+          </div>
     </AccountContext.Provider>
   );
 }
