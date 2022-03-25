@@ -15,9 +15,11 @@ function GridTile(props: any) {
         borderRadius: '10px'
     }
 
+    const children = props.href ? <Link to={props.href}>{props.children}</Link> : props.children
+
     return <Col xs={props.xs} sm={props.sm} md={props.md} lg={props.lg} xl={props.xl} style={{ margin: 0, padding: 0 }}>
         <Row className='w-100' style={{padding:'0.7rem', margin:0}}>
-            <Col style={{ ...innerStyles, ...props.style }}><Link to={props.href}>{props.children}</Link></Col>
+            <Col style={{ ...innerStyles, ...props.style }}>{children}</Col>
         </Row>
     </Col>
 }
