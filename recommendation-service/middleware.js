@@ -1,3 +1,14 @@
+const obj = {
+  'act1': 'Focus excercise',
+  'act2': 'Sleeping excercise',
+  'act3': 'Flexibility excercise',
+  'act4': '',
+  'act5': '',
+  'act6': '',
+  'act7': '',
+  'act8': '',
+};
+
 app.get(‘/recommendation’, callGet_recommendations);function callGet_recommendations(req, res) {
   // using spawn instead of exec, prefer a stream over a buffer
   // to avoid maxBuffer issue
