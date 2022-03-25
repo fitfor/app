@@ -12,7 +12,9 @@ const obj = {
   'act8': '',
 };
 
-router.get('/', callGet_recommendations);function callGet_recommendations(req:any, res:any) {
+router.get('/', callGet_recommendations);
+
+function callGet_recommendations(req:any, res:any) {
   // using spawn instead of exec, prefer a stream over a buffer
   // to avoid maxBuffer issue
   console.log('here')
