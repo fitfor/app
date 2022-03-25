@@ -6,6 +6,7 @@ import MyLibrary from './routes/MyLibrary'
 import MyAccount from './routes/MyAccount'
 import styled from "styled-components";
 import Login from "./routes/Login";
+import Activity from './routes/Activity'
 import { mediaQuery, MediaQueryWidth } from "./utils";
 
 
@@ -20,7 +21,7 @@ const AppContainer = styled.div`
 
 const BoxContainer = styled.div`
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   border-radius: 19px;
@@ -43,6 +44,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/my-library" element={<MyLibrary />} />
         <Route path="/my-account" element={<MyAccount />} />
+        <Route path='/activity/:id' element={<Activity />}/>
       </Routes>
       </BoxContainer>
     </AppContainer>

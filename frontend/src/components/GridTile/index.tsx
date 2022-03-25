@@ -1,4 +1,5 @@
 import { Col, Row } from "react-bootstrap"
+import { Link } from "react-router-dom"
 
 const styles = {
     padding: '0.5rem'
@@ -16,7 +17,7 @@ function GridTile(props: any) {
 
     return <Col xs={props.xs} sm={props.sm} md={props.md} lg={props.lg} xl={props.xl} style={{ margin: 0, padding: 0 }}>
         <Row className='w-100' style={{padding:'0.7rem', margin:0}}>
-            <Col style={{ ...innerStyles, ...props.style }}>{props.children}</Col>
+            <Col style={{ ...innerStyles, ...props.style }}><Link to={props.href}>{props.children}</Link></Col>
         </Row>
     </Col>
 }
