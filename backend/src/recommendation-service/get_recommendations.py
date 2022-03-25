@@ -3,6 +3,8 @@ import sys
 import pandas as pd
 
 
+print("hereee")
+
 ####
 # Global Var
 ass_rules_path = 'data/ass_rules_v1.pkl'

@@ -3,6 +3,7 @@ import cookieParser from 'cookie-parser'
 import logger from 'morgan'
 import path from 'path'
 import indexRouter from './app.routes'
+import recommendationsRouter from '../recommendation-service/recommendations.routes'
 import cors from 'cors'
 import { makeResponse } from './utils'
 
@@ -18,6 +19,7 @@ app.use(
 )
 
 app.use('/', indexRouter)
+app.use('/recommendations', recommendationsRouter)
 
 app.use((err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
   if (err.error !== null && err.error !== undefined) {
